@@ -38,7 +38,7 @@ const Input: React.FC<InputProps> = ({
         id={id}
         disabled={disabled}
         type={type}
-        {...register(id, { required, minLength: 5 })}
+        {...register(id, { required, minLength: 3, maxLength: 255 })}
         placeholder=" "
         onChange={(e) => setValue(e.target.value)}
         className={`peer w-full p-4 pt-6 font-light bg-white border-2 rounded-md oultine-none transition disabled:opacity-70 disabled:cursor-not-allowed ${
